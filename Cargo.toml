@@ -1,0 +1,116 @@
+[package]
+name = "oxidizedgraph"
+version = "0.2.0"
+edition = "2021"
+authors = ["OxidizedGraph Inc.", "Lornuai, Inc."]
+description = "Evaluation library for oxidizedgraph — LangGraph-shaped Rust orchestration with checkpointed state"
+license-file = "LICENSE"
+repository = "https://github.com/oxidizedgraph-dev/oxidizedgraph"
+homepage = "https://oxidizedgraph.dev"
+documentation = "https://oxidizedgraph.dev/docs"
+publish = false
+keywords = [
+  "langgraph",
+  "ai-agents",
+  "agent-orchestration",
+  "rust",
+  "tokio",
+]
+categories = ["asynchronous", "development-tools"]
+
+[features]
+default = []
+stream = ["tokio-stream/sync"]
+
+[dependencies]
+petgraph = { version = "0.6", features = ["serde-1"] }
+tokio = { version = "1", features = ["full"] }
+tokio-stream = "0.1"
+tokio-util = "0.7"
+async-trait = "0.1"
+futures = "0.3"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+reqwest = { version = "0.12", features = ["json"] }
+thiserror = "2"
+tracing = "0.1"
+uuid = { version = "1", features = ["v4", "serde"] }
+chrono = { version = "0.4", features = ["serde"] }
+sha2 = "0.10"
+derive_builder = "0.20"
+crossbeam-channel = "0.5"
+git2 = "0.19"
+pathdiff = "0.2.3"
+
+[dev-dependencies]
+async-trait = "0.1"
+tokio-test = "0.4"
+mockall = "0.13"
+criterion = "0.5"
+tempfile = "3.27.0"
+anyhow = "1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+
+[[example]]
+name = "simple_workflow"
+path = "examples/simple_workflow.rs"
+
+[[example]]
+name = "react_agent"
+path = "examples/react_agent.rs"
+
+[[example]]
+name = "git_push"
+path = "examples/git_push.rs"
+
+[[example]]
+name = "rag_workflow"
+path = "examples/rag_workflow.rs"
+
+[[example]]
+name = "streaming_events"
+path = "examples/streaming_events.rs"
+
+[[example]]
+name = "multi_agent"
+path = "examples/multi_agent.rs"
+
+[[example]]
+name = "autonomous_dev_workflow"
+path = "examples/autonomous_dev_workflow.rs"
+
+[[example]]
+name = "role_orchestration_workflow"
+path = "examples/role_orchestration_workflow.rs"
+
+[[example]]
+name = "planning_workflow"
+path = "examples/planning_workflow.rs"
+
+[[example]]
+name = "hitl_workflow"
+path = "examples/hitl_workflow.rs"
+
+[[example]]
+name = "memory_workflow"
+path = "examples/memory_workflow.rs"
+
+[[example]]
+name = "multirepo_cicd_workflow"
+path = "examples/multirepo_cicd_workflow.rs"
+
+[[example]]
+name = "enterprise_workflow"
+path = "examples/enterprise_workflow.rs"
+
+[[example]]
+name = "governance_workflow"
+path = "examples/governance_workflow.rs"
+
+[[bench]]
+name = "perf"
+harness = false
+
+[[bench]]
+name = "runtime"
+harness = false

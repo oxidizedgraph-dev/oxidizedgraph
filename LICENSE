@@ -1,8 +1,30 @@
+OxidizedGraph Evaluation License
+
 Copyright (c) 2026 Lornuai, Inc. / OxidizedGraph Inc. All rights reserved.
 
-This repository is a public release notice. It does not grant rights to copy,
-modify, or redistribute the oxidizedgraph product. Use of the software requires
-a written agreement with Lornuai, Inc.
+This repository is a public evaluation cut of the oxidizedgraph library.
+It is not an open-source license and is not the commercial product tree.
 
-Contact: hello@oxidizedgraph.dev
-Site: https://oxidizedgraph.dev
+1. Grant
+   You may clone this repository, build it, run its tests and examples,
+   and inspect the source solely to evaluate the product.
+
+2. Restrictions
+   You may not use the Software in production, offer it as a hosted
+   service, or redistribute it except as required for that evaluation.
+   The commercial host, fleet adapters, and production license are
+   granted only under a written agreement.
+
+3. Upstream OSS
+   Portions of the Software are derived from Apache-2.0 licensed work.
+   See LICENSE-APACHE-UPSTREAM.md.
+
+4. Disclaimer
+   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+   EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+   MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+   NONINFRINGEMENT.
+
+5. Contact
+   hello@oxidizedgraph.dev
+   https://oxidizedgraph.dev

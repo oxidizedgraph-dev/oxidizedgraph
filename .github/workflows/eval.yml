@@ -1,0 +1,18 @@
+name: eval
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+      - name: Test library
+        run: cargo test
+      - name: Run simple workflow example
+        run: cargo run --example simple_workflow
