@@ -1,0 +1,7 @@
+.aivcs/
+.env
+.env.*
+target/
+result
+result-*
+.og/
